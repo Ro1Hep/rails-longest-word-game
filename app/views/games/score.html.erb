@@ -1,0 +1,14 @@
+<div class="container">
+
+  <h1>Results</h1>
+
+  <% if @included = true %>
+        <% if @english_word == true %>
+          <p>Congratulations!</p>
+        <% else %>
+          <p>Not and English word, sorry</p>
+        <% end %>
+    <% else %>
+        <p>Unavailable character used, silly.</p>
+  <% end %>
+</div>
