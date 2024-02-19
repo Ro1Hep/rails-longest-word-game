@@ -4,11 +4,14 @@
 
   <% if @included = true %>
         <% if @english_word == true %>
-          <p>Congratulations!</p>
+          <h3>Congratulations!</h3>
+          <p>You win a small amount of satisfaction.</p>
         <% else %>
           <p>Not and English word, sorry</p>
         <% end %>
     <% else %>
         <p>Unavailable character used, silly.</p>
   <% end %>
+
+  <%= link_to "Go again!", new_path %>
 </div>
